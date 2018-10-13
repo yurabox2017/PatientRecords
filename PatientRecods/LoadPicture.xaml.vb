@@ -52,8 +52,8 @@ Public Class LoadPicture
 
     Private Sub LoadPicture_Loaded(sender As Object, e As System.Windows.RoutedEventArgs) Handles Me.Loaded
         Try
-            Dim l_test As test = New test
-            MsgBox(l_test.testsend)
+            'Dim l_test As test = New test
+            'MsgBox(l_test.testsend)
             With Me.l_photos
                 Me.PhotoPers1.Source = cmn.ImgGetImgFromByte(IIf(.photo_pers1 IsNot Nothing, .photo_pers1, Nothing))
                 Me.PhotoPers2.Source = cmn.ImgGetImgFromByte(IIf(.photo_pers2 IsNot Nothing, .photo_pers2, Nothing))

@@ -268,7 +268,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <AppDesigner Include="My Project\" />
-    <None Include="PatientRecods_TemporaryKey.pfx" />
     <None Include="Resources\id_rsa" />
   </ItemGroup>
   <ItemGroup>

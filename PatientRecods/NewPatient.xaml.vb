@@ -47,8 +47,8 @@ Public Class NewPatient
 
     Private Sub cmdAddPhoto_MouseLeftButtonUp(sender As Object, e As System.Windows.Input.MouseButtonEventArgs) Handles cmdAddPhoto.MouseLeftButtonUp
         Try
-            Dim l_str As test = New test
-            l_str.testsend = "привет как дела"
+            'Dim l_str As test = New test
+            'l_str.testsend = "привет как дела"
             Dim l_win As New LoadPicture
             'Передаем фото
             l_win.l_photos = l_profile
