@@ -1,0 +1,40 @@
+﻿<Window x:Class="CreateRecordDate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CreateRecordDate" 
+        WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Window.Background>
+        <ImageBrush  ImageSource="/PatientRecods;component/Images/wallpapers_14049-simple.jpg" />
+    </Window.Background>
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel  Orientation="Horizontal">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Дата записи" Template="{StaticResource LabelTemplateStatic}" Height="30"  Margin="0,5,0,0" />
+                <DatePicker Name="dtDateMeeting" Width="100px" HorizontalAlignment="Left" Height="30"  Grid.Column="1"/>
+                <Label Content="Фамилия" Template="{StaticResource LabelTemplateStatic}" Grid.Row="1" Grid.Column="0" />
+                <TextBox Name="txtFamilyName" Width="200" Grid.Row="1" Grid.Column="1" />
+                <Label Content="Имя" Template="{StaticResource LabelTemplateStatic}" Grid.Row="2" Grid.Column="0"/>
+                <TextBox Name="txtFirstName" Width="200" Grid.Row="2" Grid.Column="1"  />
+                <Label Content="Уведомить за кол-во дней" Template="{StaticResource LabelTemplateStatic}" Grid.Row="3" Grid.Column="0"/>
+                <TextBox Name="txtNotifyDays" HorizontalAlignment="Left" Width="30" Grid.Row="3"  Grid.Column="1"/>
+            </Grid>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="LoadPicture"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Добавить фото" SizeToContent="WidthAndHeight"
+    WindowStartupLocation="CenterScreen"
+    ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush  ImageSource="/PatientRecods;component/Images/wallpapers_14049-simple.jpg" />
+    </Window.Background>
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Border Name="Border1" BorderThickness="1" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" ClipToBounds="False">          
+                <Image Name="PhotoPers1" Height="180" Width="180"/>
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoPers1" Content="Добавить фото"  VerticalAlignment="Bottom" Margin="0,5,0,0" Grid.Row="1" HorizontalAlignment="Center" />
+        <Border Name="Border2" BorderThickness="1" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" Grid.Column="1">
+                <Image Name="PhotoPers2" Height="180" Width="180" MouseLeftButtonUp="PhotoPers1_MouseLeftButtonUp" />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoPers2" Content="Добавить фото" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  VerticalAlignment="Bottom" Margin="0,5,0,0" Grid.Row="1" HorizontalAlignment="Center" Grid.Column="1" />
+        <Border Name="Border3" BorderThickness="1" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" Grid.Column="2"  >
+            <Image Name="PhotoPers3" Height="180" Width="180" MouseLeftButtonUp="PhotoPers1_MouseLeftButtonUp" />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoPers3" Content="Добавить фото" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  VerticalAlignment="Bottom" Margin="0,5,0,0" Grid.Row="1" HorizontalAlignment="Center" Grid.Column="2" />
+        <Border Name="Border4" BorderThickness="1" Grid.Row="2" BorderBrush="#FF7F9DB9" Margin="10,5,0,0">
+            <Image Name="PhotoXRay1" Height="180" Width="180"  />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoXRay1" Content="Добавить снимок" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center"  Grid.Row="4" />
+        <Border Name="Border5"  BorderThickness="1" Grid.Row="2" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" Grid.Column="1" >
+            <Image Name="PhotoXRay2" Height="180" Width="180" MouseLeftButtonUp="PhotoXRay1_MouseLeftButtonUp" />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoXRay2" Content="Добавить снимок" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center"  Grid.Row="4" />
+        <Border Name="Border6"  BorderThickness="1" Grid.Row="2" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" Grid.Column="2">
+            <Image Name="PhotoXRay3" Height="180" Width="180" MouseLeftButtonUp="PhotoXRay1_MouseLeftButtonUp" />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoXRay3" Content="Добавить снимок" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4" />
+        <Border Name="Border7"  BorderThickness="1" Grid.Row="2" BorderBrush="#FF7F9DB9" Margin="10,5,0,0" Grid.Column="3" >
+            <Image Name="PhotoXRay4" Height="180" Width="180" MouseLeftButtonUp="PhotoXRay1_MouseLeftButtonUp" />
+        </Border>
+        <Label Template="{StaticResource Button}" Name="cmdPhotoXRay4" Content="Добавить снимок" MouseLeftButtonUp="cmdPhotoPers1_MouseLeftButtonUp"  Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4" />
+        <StackPanel  Orientation="Horizontal" Grid.Row="5" Grid.ColumnSpan="4" HorizontalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Template="{StaticResource Button}" Name="cmdAddPhoto" Content="Сохранить" VerticalAlignment="Bottom" Margin="0,20,0,0"  />
+                <Label Template="{StaticResource Button}" Name="cmdClearAll" Content="Очистить все"  Grid.Column="1" VerticalAlignment="Bottom" Margin="5,0,0,0"  HorizontalAlignment="Center" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
