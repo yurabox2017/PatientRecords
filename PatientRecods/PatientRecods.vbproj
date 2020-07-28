@@ -27,11 +27,11 @@
     <ProductName>Учет Пациента</ProductName>
     <PublisherName>Jura</PublisherName>
     <SuiteName>Учет Пациента</SuiteName>
-    <MinimumRequiredVersion>1.0.0.31</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.0.32</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>32</ApplicationRevision>
+    <ApplicationRevision>33</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

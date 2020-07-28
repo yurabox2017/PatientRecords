@@ -129,7 +129,7 @@ Class MainWindow
         Dim l_stream = New IO.FileStream(AppDomain.CurrentDomain.BaseDirectory & "id_rsa", IO.FileMode.Open, IO.FileAccess.Read)
         Dim pk = New PrivateKeyFile(l_stream, "5HAN7PZ2?AdQ")
         l_stream.Dispose()
-        Dim con_info = New ConnectionInfo("cpanel13.d.fozzy.com", 22, "romanber", New PrivateKeyAuthenticationMethod("romanber", pk))
+        Dim con_info = New ConnectionInfo("cpanel14.d.fozzy.com", 22, "romanber", New PrivateKeyAuthenticationMethod("romanber", pk))
         l_client = New SshClient(con_info)
         l_client.Connect()
         l_tunnel = New ForwardedPortLocal("127.0.0.1", 22, "127.0.0.1", 3306)
